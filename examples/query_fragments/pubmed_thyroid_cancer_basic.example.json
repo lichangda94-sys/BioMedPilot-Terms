@@ -1,0 +1,13 @@
+{
+  "id": "pubmed_thyroid_cancer_basic",
+  "database": "PubMed",
+  "topic": "thyroid cancer",
+  "query_fragment": "(thyroid cancer[Title/Abstract]) OR (thyroid carcinoma[Title/Abstract])",
+  "status": "example",
+  "language": "en",
+  "intended_use": "Illustrative candidate fragment for discussion and review.",
+  "notes": "Example fragment only. Final query should be reviewed in context.",
+  "review_notes": [
+    "Field tags and synonym breadth should be reviewed for actual study use."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "geo_thyroid_cancer_basic",
+  "database": "GEO",
+  "topic": "thyroid cancer",
+  "query_fragment": "\"thyroid cancer\" OR \"thyroid carcinoma\"",
+  "status": "example",
+  "language": "en",
+  "intended_use": "Illustrative candidate fragment for discussion and review.",
+  "notes": "Example fragment only. Final query should be reviewed in context.",
+  "review_notes": [
+    "Dataset filtering and platform constraints require case-by-case review."
+  ]
+}

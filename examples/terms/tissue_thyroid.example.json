@@ -1,0 +1,21 @@
+{
+  "id": "tissue_thyroid",
+  "category": "tissue",
+  "zh": "甲状腺",
+  "en": "thyroid",
+  "status": "example",
+  "synonyms": [
+    "thyroid gland"
+  ],
+  "database_tags": [
+    "GTEx",
+    "GEO"
+  ],
+  "notes": "Example entry only. Not full BioMedPilot production vocabulary.",
+  "source_notes": [
+    "Public example for contributor formatting."
+  ],
+  "review_notes": [
+    "Confirm tissue granularity if paired with pathology terms."
+  ]
+}

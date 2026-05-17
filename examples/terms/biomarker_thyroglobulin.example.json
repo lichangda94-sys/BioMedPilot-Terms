@@ -1,0 +1,23 @@
+{
+  "id": "biomarker_thyroglobulin",
+  "category": "biomarker",
+  "zh": "甲状腺球蛋白",
+  "en": "thyroglobulin",
+  "status": "example",
+  "abbreviations": [
+    "TG"
+  ],
+  "synonyms": [
+    "thyroglobulin protein"
+  ],
+  "database_tags": [
+    "PubMed"
+  ],
+  "notes": "Example entry only. Not full BioMedPilot production vocabulary.",
+  "source_notes": [
+    "Public example for contributor formatting."
+  ],
+  "review_notes": [
+    "Abbreviation may require context-sensitive handling."
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "method_rna_seq",
+  "category": "method",
+  "zh": "RNA测序",
+  "en": "RNA sequencing",
+  "status": "example",
+  "abbreviations": [
+    "RNA-seq"
+  ],
+  "synonyms": [
+    "RNA seq"
+  ],
+  "database_tags": [
+    "GEO"
+  ],
+  "notes": "Example entry only. Not full BioMedPilot production vocabulary.",
+  "source_notes": [
+    "Public example for contributor formatting."
+  ],
+  "review_notes": [
+    "Method naming should stay normalized across casing and punctuation variants."
+  ]
+}

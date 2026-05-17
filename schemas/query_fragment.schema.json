@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/lichangda94-sys/BioMedPilot-Terms/schemas/query_fragment.schema.json",
+  "title": "BioMedPilot Query Fragment",
+  "description": "Public candidate and example schema for database-specific query fragment entries.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "database",
+    "topic",
+    "query_fragment",
+    "status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 3
+    },
+    "database": {
+      "type": "string",
+      "enum": [
+        "PubMed",
+        "GEO",
+        "TCGA",
+        "GTEx",
+        "Embase",
+        "Web of Science",
+        "Cochrane",
+        "CNKI",
+        "Wanfang",
+        "VIP",
+        "Other"
+      ]
+    },
+    "topic": {
+      "type": "string",
+      "minLength": 1
+    },
+    "query_fragment": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "example",
+        "candidate",
+        "review_required"
+      ]
+    },
+    "language": {
+      "type": "string"
+    },
+    "intended_use": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "review_notes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  }
+}

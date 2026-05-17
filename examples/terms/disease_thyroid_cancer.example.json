@@ -1,0 +1,21 @@
+{
+  "id": "disease_thyroid_cancer",
+  "category": "disease",
+  "zh": "甲状腺癌",
+  "en": "thyroid cancer",
+  "status": "example",
+  "synonyms": [
+    "thyroid carcinoma"
+  ],
+  "database_tags": [
+    "PubMed",
+    "GEO"
+  ],
+  "notes": "Example entry only. Not full BioMedPilot production vocabulary.",
+  "source_notes": [
+    "Public example for contributor formatting."
+  ],
+  "review_notes": [
+    "Check synonym scope before broader use."
+  ]
+}
