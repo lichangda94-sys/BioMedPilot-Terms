@@ -1,0 +1,97 @@
+name: Candidate term proposal
+description: Propose a candidate biomedical term entry for public discussion before or alongside a PR.
+title: "[Term] "
+labels:
+  - candidate-term
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form only for public-safe candidate terms.
+
+        Do not submit:
+        - private BioMedPilot vocabulary
+        - patient data
+        - private institutional data
+        - copied proprietary or commercial thesaurus content
+        - production query logic, prompts, ranking logic, or routing logic
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Choose the public category that best fits this candidate.
+      options:
+        - disease
+        - tissue
+        - biomarker
+        - method
+        - organism
+        - intervention
+        - outcome
+        - database
+        - general
+    validations:
+      required: true
+  - type: input
+    id: zh
+    attributes:
+      label: Chinese term
+      placeholder: 例如 甲状腺癌
+    validations:
+      required: true
+  - type: input
+    id: en
+    attributes:
+      label: English term
+      placeholder: e.g. thyroid cancer
+    validations:
+      required: true
+  - type: textarea
+    id: synonyms
+    attributes:
+      label: Candidate synonyms
+      description: One per line. Keep them narrow and medically appropriate.
+      placeholder: |
+        thyroid carcinoma
+        papillary thyroid carcinoma
+    validations:
+      required: false
+  - type: textarea
+    id: abbreviations
+    attributes:
+      label: Candidate abbreviations
+      description: One per line. Leave blank if none.
+      placeholder: |
+        PTC
+    validations:
+      required: false
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Rationale and source notes
+      description: Explain why this candidate is useful and what public source context supports it.
+      placeholder: Public source summary, normalization notes, ambiguity notes, or review context.
+    validations:
+      required: true
+  - type: dropdown
+    id: status
+    attributes:
+      label: Suggested public status
+      options:
+        - candidate
+        - review_required
+    validations:
+      required: true
+  - type: checkboxes
+    id: compliance
+    attributes:
+      label: Compliance checklist
+      options:
+        - label: This does not include patient data, private institutional data, or user logs.
+          required: true
+        - label: This does not copy proprietary vocabulary, commercial thesaurus content, or database dumps.
+          required: true
+        - label: This is a candidate resource only and is not presented as BioMedPilot production coverage.
+          required: true
+        - label: I have read the contribution rules and private asset boundary documents.
+          required: true

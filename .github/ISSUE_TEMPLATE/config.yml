@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security or sensitive data report
+    url: https://github.com/lichangda94-sys/BioMedPilot-Terms/security/policy
+    about: Report secrets, patient data, private institutional data, or other sensitive material privately.
+  - name: Private asset boundary
+    url: https://github.com/lichangda94-sys/BioMedPilot-Terms/blob/main/docs/private_asset_boundary.md
+    about: Read the public-private boundary before proposing vocabulary or query content.

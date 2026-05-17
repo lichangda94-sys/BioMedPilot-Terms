@@ -1,0 +1,87 @@
+name: Candidate query fragment proposal
+description: Propose a candidate database-specific query fragment for review.
+title: "[Query] "
+labels:
+  - candidate-query-fragment
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Query fragments in this repository are examples or candidates only.
+
+        Do not submit:
+        - full production search strategies
+        - copied commercial database content
+        - login, cookie, API credential, or scraping bypass details
+        - private BioMedPilot search logic
+  - type: dropdown
+    id: database
+    attributes:
+      label: Database
+      options:
+        - PubMed
+        - GEO
+        - TCGA
+        - GTEx
+        - Embase
+        - Web of Science
+        - Cochrane
+        - CNKI
+        - Wanfang
+        - VIP
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: topic
+    attributes:
+      label: Topic
+      placeholder: e.g. thyroid cancer
+    validations:
+      required: true
+  - type: textarea
+    id: query_fragment
+    attributes:
+      label: Candidate query fragment
+      description: Keep it short and reviewable. This should be a fragment, not a full production search strategy.
+      placeholder: |
+        (thyroid cancer[Title/Abstract]) OR (thyroid carcinoma[Title/Abstract])
+    validations:
+      required: true
+  - type: input
+    id: language
+    attributes:
+      label: Language
+      placeholder: e.g. en, zh, mixed
+    validations:
+      required: false
+  - type: textarea
+    id: intended_use
+    attributes:
+      label: Intended use and review context
+      description: Explain what the fragment is trying to capture and what caveats reviewers should check.
+      placeholder: Candidate fragment for literature search discussion, not final production logic.
+    validations:
+      required: true
+  - type: dropdown
+    id: status
+    attributes:
+      label: Suggested public status
+      options:
+        - candidate
+        - review_required
+    validations:
+      required: true
+  - type: checkboxes
+    id: compliance
+    attributes:
+      label: Compliance checklist
+      options:
+        - label: This does not include secrets, credentials, cookies, login details, or scraping bypass logic.
+          required: true
+        - label: This does not copy proprietary database content or a commercial search strategy dump.
+          required: true
+        - label: This is a candidate fragment only and must be reviewed before any real-world use.
+          required: true
+        - label: I have read the database query fragment rules and private asset boundary documents.
+          required: true

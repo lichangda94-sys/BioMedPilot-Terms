@@ -25,6 +25,12 @@ Thank you for contributing candidate biomedical terminology resources.
 3. Validate the repository locally.
 4. Open a pull request with a concise explanation of the source and rationale.
 
+## GitHub Intake Expectations
+
+- Use the provided Issue forms for candidate terms, candidate query fragments, and documentation or policy updates.
+- Use the pull request template and complete the compliance checklist.
+- Do not open generic submissions that paste large private vocabularies, full production search strategies, or commercial database content.
+
 ## By Submitting
 
 By submitting a contribution, you represent that you have the right to provide the material and that the material does not violate privacy, confidentiality, license, copyright, or data-use restrictions.

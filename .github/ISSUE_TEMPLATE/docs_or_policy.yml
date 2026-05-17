@@ -1,0 +1,29 @@
+name: Documentation or policy improvement
+description: Propose a documentation, contribution-rule, or policy clarification update.
+title: "[Docs] "
+labels:
+  - docs
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is unclear or missing?
+      placeholder: Describe the gap in the current docs, contribution flow, or review policy.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed improvement
+      placeholder: Explain the wording, structure, or policy clarification you want to add.
+    validations:
+      required: true
+  - type: checkboxes
+    id: compliance
+    attributes:
+      label: Compliance checklist
+      options:
+        - label: This proposal does not include private assets, confidential material, or sensitive data.
+          required: true
+        - label: This proposal is limited to public-safe documentation or policy content.
+          required: true
